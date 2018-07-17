@@ -20,16 +20,16 @@ int sorting(int car[]){
 		for(i=0;i<4;i++){
 			switch(g[i]){
 				case 0:
-					printf("¤j«¬¨®:%d\n",car[i]);
+					printf("å¤§åž‹è»Š:%d\n",car[i]);
 					break;
 				case 1:
-					printf("¤¤«¬¨®:%d\n",car[i]);
+					printf("ä¸­åž‹è»Š:%d\n",car[i]);
 					break;
 				case 2:
-					printf("¤p«¬¨®:%d\n",car[i]);
+					printf("å°åž‹è»Š:%d\n",car[i]);
 					break;
 				case 3:
-					printf("¤½°È¨®:%d\n",car[i]);
+					printf("å…¬å‹™è»Š:%d\n",car[i]);
 					break;
 				
 			}
@@ -43,7 +43,7 @@ int main(int argc, char *argv[]) {
     int x,i,j,n,f[]={0,1,2,3},q,w,e,r;
 	char day[20];
 	
-	printf("½Ð¿ï¾Ü¥H¨Ì¨®½øºØÃþ(1)©Î¨Ì¬P´Á§O(2)Åã¥Ü:\n");
+	printf("è«‹é¸æ“‡ä»¥ä¾è»Šè¼›ç¨®é¡ž(1)æˆ–ä¾æ˜ŸæœŸåˆ¥(2)é¡¯ç¤º:\n");
 	scanf("%d",&x);
 	if(x==1){
 	    int car[4];
@@ -78,13 +78,13 @@ int main(int argc, char *argv[]) {
 			to[6]+=q+w+e+r;
 		}
 		}
-		printf("¬P´Á¤@:%d\n",to[0]);
-		printf("¬P´Á¤G:%d\n",to[1]);
-		printf("¬P´Á¤T:%d\n",to[2]);
-		printf("¬P´Á¥|:%d\n",to[3]);
-		printf("¬P´Á¤­:%d\n",to[4]);
-		printf("¬P´Á¤»:%d\n",to[5]);
-		printf("¬P´Á¤é:%d\n",to[6]);
+		printf("æ˜ŸæœŸä¸€:%d\n",to[0]);
+		printf("æ˜ŸæœŸäºŒ:%d\n",to[1]);
+		printf("æ˜ŸæœŸä¸‰:%d\n",to[2]);
+		printf("æ˜ŸæœŸå››:%d\n",to[3]);
+		printf("æ˜ŸæœŸäº”:%d\n",to[4]);
+		printf("æ˜ŸæœŸå…­:%d\n",to[5]);
+		printf("æ˜ŸæœŸæ—¥:%d\n",to[6]);
 	}
 	fclose(fi);
 	system("pause");
