@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
 	gcd(a,b);
 	}
 	fclose(fi);
-	system("pause");
+	system("PAUSE");
 	return 0;
 }
 
@@ -40,23 +40,27 @@ int gg(int a,int b,char o,int x,int y){
 }
 
 int gcd(int a, int b) {
-	int i,j,x=0;
-	if(a>b)
-	    i=a;
-    else
-        i=b;
-    for(;i>=1;i--){
-    	if(a%i==0&&b%i==0){
-    		a=a/i;
-    		b=b/i;
+	int i,x=0,temp,to,a1,b1;
+	a1=a;b1=b;
+	if((a==0)||(b==0)){
+		printf("%2d",x);
+	}else{
+		if(a<b){
+			to=a;
+			a=b;
+			b=to;
 		}
-		if(b==1){
-			printf("%2d\n",a);
-			x=1;
-			braek;
-		}
+	while(a%b!=0){
+		temp=a%b;
+		a=b;
+		b=temp;
 	}
-	if(x!=1){
-		printf("%2d/%2d\n",a,b);
+	}
+	if(b==1){
+		printf("%2d/%2d",a,b);
+	}else{
+		a=a1/b;
+		b=b1/b;
+		printf("%2d/%2d",a,b);
 	}
 }
